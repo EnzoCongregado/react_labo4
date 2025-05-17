@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocalStorage } from "./useLocalStorage";
+import { useLocalStorage } from "./UseLocalStorage";
 import "lite-youtube-embed/src/lite-yt-embed.css";
 import "lite-youtube-embed";
 import "./index.css";
@@ -80,13 +80,12 @@ function App() {
     .sort((a, b) => (ordenar ? b.veces - a.veces : 0));
 
   return (
-    <body>
+    <div className="Fondo">
        <header className="encabezado">
       <img src="fondo.png" alt="Logo Música" className="logo-header" />
     </header>
 
     <main>
-
       <h2>🎵 Agregar Canción</h2>
       <input
         type="text"
@@ -152,7 +151,7 @@ function App() {
         </div>
       )}
     </main>
-    </body>
+    </div>
   );
 }
 

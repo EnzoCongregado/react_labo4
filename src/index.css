@@ -1,38 +1,60 @@
+
 body{
   margin: 0;
 }
 
+.Fondo{
+  background-image: url(/fondos_musica.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#root{
+  height: 100%;
+}
+
 .encabezado {
   width: 100%;
-  background-color: #534b4b;
-  padding: 1%;
+  background-color: #5a5757;
   text-align: center;
 }
 
 .logo-header {
-  height: 120px;
+  height: 100px;
   object-fit: contain;
   margin: auto;
 }
 
 main {
+  margin: 0;
   display: block;
   font-family: Arial, sans-serif;
   padding: 5%;
   background: #ff3535;
   min-height: 200px;
 }
+
+
 input {
+  border-radius: 4px;
   margin: 5px;
   padding: 5px;
 }
 button {
+  border-radius: 5px;
   margin: 5px;
   padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 li {
-  margin-bottom: 2%;
-  background: rgb(168, 233, 227);
+  margin-bottom: 3%;
+  background: rgb(57, 149, 202);
   padding: 10px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
